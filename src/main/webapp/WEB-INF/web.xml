@@ -9,4 +9,13 @@
   	<servlet-name>addition</servlet-name>
   	<url-pattern>/add</url-pattern>
   </servlet-mapping>
+  
+    <servlet>
+  	<servlet-name>anotherServlet</servlet-name>
+  	<servlet-class>com.softech.SqServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>anotherServlet</servlet-name>
+  	<url-pattern>/sq</url-pattern>
+  </servlet-mapping>
 </web-app>
