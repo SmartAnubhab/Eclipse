@@ -8,12 +8,12 @@ import javax.servlet.http.HttpServletResponse;
 public class SqServlet extends HttpServlet{
 	public void service(HttpServletRequest req, HttpServletResponse res) throws IOException {
 		
-		float result=(float)req.getAttribute("r");
+		float result=(float)req.getAttribute("result");
 		float temp=result;
-		result *= result;
 		PrintWriter out=res.getWriter();
-		out.println("Print message for SqServlet");
-		out.println("value of k is : " + temp);
-		out.println("So the desired result is " + result);
+		out.println("value of addition is : " + temp);
+		out.println("value of square is : " + result);
+		
+		
 	}
 }
