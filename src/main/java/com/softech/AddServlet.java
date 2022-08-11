@@ -10,17 +10,29 @@ import javax.servlet.http.HttpServletResponse;
 
 public class AddServlet extends HttpServlet{
 	public void service(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException {
-		float a=Float.parseFloat(req.getParameter("num1"));
-		float b=Float.parseFloat(req.getParameter("num2"));
-		float result = a+b;
+//		float a=Float.parseFloat(req.getParameter("num1"));
+//		float b=Float.parseFloat(req.getParameter("num2"));
+//		float result = a+b;
 		
 //		PrintWriter out=res.getWriter();
 //		out.println("The result is : " + result);
 		
-		req.setAttribute("result", result);
+//		req.setAttribute("result", result);
+//		
+//		RequestDispatcher rd=req.getRequestDispatcher("sq");
+//		rd.forward(req, res);
+		
+		float a=Float.parseFloat(req.getParameter("num1"));
+		float b=Float.parseFloat(req.getParameter("num2"));
+		float result=a+b;
+		
+		req.setAttribute("rslt", result);
 		
 		RequestDispatcher rd=req.getRequestDispatcher("sq");
 		rd.forward(req, res);
+		
+		PrintWriter out=res.getWriter();
+		out.println("Hello world");
 		
 	}
 }
