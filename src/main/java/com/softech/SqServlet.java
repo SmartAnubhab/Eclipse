@@ -15,8 +15,11 @@ public class SqServlet extends HttpServlet{
 //		out.println("value of square is : " + result);
 		
 		float r=(float)req.getAttribute("rslt");
+		float a=(float)req.getAttribute("a");
+		float b=(float)req.getAttribute("b");
 		
 		PrintWriter out=res.getWriter();
+		out.println("Input is : " +a+" and "+b );
 		out.println("Sum is : " + r);
 		r*=r;
 		out.println("Square is : " + r);
