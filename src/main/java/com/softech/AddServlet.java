@@ -26,6 +26,8 @@ public class AddServlet extends HttpServlet{
 		float b=Float.parseFloat(req.getParameter("num2"));
 		float result=a+b;
 		
+		req.setAttribute("a", a);
+		req.setAttribute("b", b);
 		req.setAttribute("rslt", result);
 		
 		RequestDispatcher rd=req.getRequestDispatcher("sq");
