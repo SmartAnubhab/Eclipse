@@ -12,10 +12,10 @@
   
   <servlet>
   	<servlet-name>SqServlet.add</servlet-name>
-  	<servlet-class>/sq</servlet-class>
+  	<servlet-class>com.softech.SqServlet</servlet-class>
   </servlet>
   <servlet-mapping>
   	<servlet-name>SqServlet.add</servlet-name>
-  	<url-pattern>com.softech.SqServlet</url-pattern>
+  	<url-pattern>/sq</url-pattern>
   </servlet-mapping>
 </web-app>
