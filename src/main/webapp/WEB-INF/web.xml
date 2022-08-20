@@ -11,6 +11,6 @@ xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/n
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>NewServlet</servlet-name>
-		<url-pattern>/New Servlet</url-pattern>
+		<url-pattern>/Click</url-pattern>
 	</servlet-mapping>
 </web-app>
