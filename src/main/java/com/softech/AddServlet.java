@@ -13,5 +13,8 @@ public class AddServlet extends HttpServlet{
 		
 		
 		out.println("hello, I am AddServlet");
+		//we need to print the addition of the inputs entered in html page
+		
+		
 	}
 }
