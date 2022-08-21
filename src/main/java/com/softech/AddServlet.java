@@ -12,7 +12,7 @@ public class AddServlet extends HttpServlet{
 		PrintWriter out=res.getWriter();
 		
 		
-		out.println("hello, I am AddServlet");
+		out.println("hello, this is AddServlet");
 		//we need to print the addition of the inputs entered in html page
 		
 		
