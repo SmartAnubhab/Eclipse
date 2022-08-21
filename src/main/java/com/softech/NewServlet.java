@@ -12,5 +12,6 @@ public class NewServlet extends HttpServlet{
 		
 		PrintWriter out=res.getWriter();
 		out.println("Hello.... \nI am a servlet.");
+		
 	}
 }
