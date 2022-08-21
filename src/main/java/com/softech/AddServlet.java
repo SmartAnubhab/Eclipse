@@ -10,5 +10,8 @@ import jakarta.servlet.http.HttpServletResponse;
 public class AddServlet extends HttpServlet{
 	public void service(HttpServletRequest req, HttpServletResponse res) throws IOException {
 		PrintWriter out=res.getWriter();
+		
+		
+		out.println("hello, I am AddServlet");
 	}
 }
