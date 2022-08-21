@@ -13,4 +13,13 @@ xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/n
 		<servlet-name>NewServlet</servlet-name>
 		<url-pattern>/Click</url-pattern>
 	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AddServlet</servlet-name>
+		<servlet-class>com.softech.AddServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddServlet</servlet-name>
+		<url-pattern>/Add</url-pattern>
+	</servlet-mapping>
 </web-app>
