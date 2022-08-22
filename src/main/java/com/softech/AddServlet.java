@@ -11,10 +11,12 @@ public class AddServlet extends HttpServlet{
 	public void service(HttpServletRequest req, HttpServletResponse res) throws IOException {
 		PrintWriter out=res.getWriter();
 		
-		
 		out.println("hello, this is AddServlet");
-		//we need to print the addition of the inputs entered in html page
 		
+		float a=Float.parseFloat((String)req.getAttribute("num1"));
+		float b=Float.parseFloat((String)req.getAttribute("num2"));
+		float result=a+b;
 		
+		out.println("\n\nThe result is : " + result);
 	}
 }
