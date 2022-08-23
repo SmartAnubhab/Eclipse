@@ -20,12 +20,7 @@ public class AddServlet extends HttpServlet{
 		out.println("\n\nThe result is : " + result);
 		
 		for(int i=0; i<60; i++){
-			try {
 				out.println(i);
-				Thread.sleep(1000);
-		    }catch(Exception e){
-		    	out.println("Error is sleep " + e);
-		    }
 		}
 	}
 }
