@@ -18,8 +18,8 @@ public class AddServlet extends HttpServlet{
 		float result=a+b;
 
 		out.println("\n\nThe result is : " + result);
-		
-		for(int i=0; i<60; i++){
+		out.println("\nFor loop:");
+		for(int i=0; i<30; i++){
 				out.println(i);
 		}
 	}
