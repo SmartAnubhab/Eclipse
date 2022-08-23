@@ -19,8 +19,10 @@ public class AddServlet extends HttpServlet{
 
 		out.println("\n\nThe result is : " + result);
 		out.println("\nFor loop:");
-		for(int i=0; i<30; i++){
-				out.println(i);
+		for(int i=0; i<15; i++){
+			if(i==14) {
+				out.println(i*2);
+			}
 		}
 	}
 }
