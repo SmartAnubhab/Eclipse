@@ -13,9 +13,6 @@ public class AddServlet extends HttpServlet{
 
 		out.println("hello, this is AddServlet");
 		
-		float a=Float.parseFloat(req.getParameter("num1"));
-		float b=Float.parseFloat(req.getParameter("num2"));
-		float result=a+b;
 
 		out.println("\n\nThe result is : " + result);
 	}
