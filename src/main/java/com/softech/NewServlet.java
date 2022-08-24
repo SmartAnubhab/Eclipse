@@ -17,6 +17,9 @@ public class NewServlet extends HttpServlet{
 		float a=Float.parseFloat(req.getParameter("num1"));
 		float b=Float.parseFloat(req.getParameter("num2"));
 		float result = a + b;
+		
+		req.setAttribute("k",result);
+		
 		RequestDispatcher rd=req.getRequestDispatcher("sq");
 		rd.forward(req, res);
 	}
