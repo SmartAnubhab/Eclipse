@@ -11,15 +11,15 @@ public class AddServlet extends HttpServlet{
 	public void doGet(HttpServletRequest req, HttpServletResponse res) throws IOException {
 		PrintWriter out=res.getWriter();
 
-		out.println("hello, this is AddServlet");
-		
+		out.println("hello, this is AddServlet with doGet ");
+		float result=(float) req.getAttribute("k");
 
 		out.println("\n\nThe result is : " + result);
 	}
 	public void doPost(HttpServletRequest req, HttpServletResponse res) throws IOException {
 		PrintWriter out=res.getWriter();
 
-		out.println("hello, this is AddServlet");
+		out.println("hello, this is AddServlet with doPost");
 		
 		float a=Float.parseFloat(req.getParameter("num1"));
 		float b=Float.parseFloat(req.getParameter("num2"));
