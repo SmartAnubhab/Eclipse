@@ -8,19 +8,19 @@ import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 
 public class NewServlet extends HttpServlet{
 	public void service(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException {
 		
-		PrintWriter out=res.getWriter();
-		out.println("Hello.... \nI am a servlet.");
 		float a=Float.parseFloat(req.getParameter("num1"));
 		float b=Float.parseFloat(req.getParameter("num2"));
-		float result = a + b;
+		float result = (float) a + b;
 		
-		req.setAttribute("k",result);
+		HttpSession session=req.getSession();
+		session.setAttribute("result",result);
 		
-		RequestDispatcher rd=req.getRequestDispatcher("sq");
-		rd.forward(req, res);
+		res.sendRedirect("sq");
+				
 	}
 }
