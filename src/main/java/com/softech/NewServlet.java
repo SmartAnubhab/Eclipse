@@ -18,11 +18,7 @@ public class NewServlet extends HttpServlet{
 		float b=Float.parseFloat(req.getParameter("num2"));
 		float result = (float) a + b;
 		
-		HttpSession session=req.getSession();
-		session.setAttribute("result",result);
-		session.setAttribute("a", a);
-		session.setAttribute("b", b);
-		
+			
 		Cookie cookie=new Cookie("result", result + "");
 		res.addCookie(cookie);
 		
