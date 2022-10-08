@@ -13,9 +13,13 @@ public class AddServlet extends HttpServlet{
 
 		HttpSession session=req.getSession();
 		float k=(float)session.getAttribute("result");
+		float a=(float)req.getAttribute("a");
+		float b=(float)req.getAttribute("b");
 		session.removeAttribute("result");
 		
 		PrintWriter out=res.getWriter();
+		out.println("Input 1 : " + a);
+		out.println("Input 2 : " + b);
 		out.println("The value passed here is : " + k);
 		
 	}

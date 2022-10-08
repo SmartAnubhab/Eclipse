@@ -19,6 +19,8 @@ public class NewServlet extends HttpServlet{
 		
 		HttpSession session=req.getSession();
 		session.setAttribute("result",result);
+		session.setAttribute("a", a);
+		session.setAttribute("b", b);
 		
 		res.sendRedirect("sq");
 				
