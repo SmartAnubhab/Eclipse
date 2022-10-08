@@ -13,8 +13,8 @@ public class AddServlet extends HttpServlet{
 
 		HttpSession session=req.getSession();
 		float k=(float)session.getAttribute("result");
-		float a=(float)req.getAttribute("a");
-		float b=(float)req.getAttribute("b");
+		float a=(float)session.getAttribute("a");
+		float b=(float)session.getAttribute("b");
 		session.removeAttribute("result");
 		
 		PrintWriter out=res.getWriter();
