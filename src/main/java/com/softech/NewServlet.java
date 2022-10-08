@@ -5,6 +5,7 @@ import java.io.PrintWriter;
 
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
+import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
@@ -21,6 +22,9 @@ public class NewServlet extends HttpServlet{
 		session.setAttribute("result",result);
 		session.setAttribute("a", a);
 		session.setAttribute("b", b);
+		
+		Cookie cookie=new Cookie("result", result + "");
+		res.addCookie(cookie);
 		
 		res.sendRedirect("sq");
 				
