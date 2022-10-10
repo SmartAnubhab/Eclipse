@@ -22,7 +22,7 @@ public class NewServlet extends HttpServlet{
 		Cookie cookie=new Cookie("result", result + "");
 		res.addCookie(cookie);
 		
-		res.sendRedirect("sq");
+		
 				
 	}
 }
