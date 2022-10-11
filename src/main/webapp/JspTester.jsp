@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body bgcolor="MediumSeaGreen">
-	<h3>h3 reference</h3>
+	<h3>h3 JSP page</h3>
 	<br>
 	<hr>
 	<%
