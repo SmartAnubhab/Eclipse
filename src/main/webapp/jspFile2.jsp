@@ -9,11 +9,13 @@
 <body bgcolor="LightGray">
 	<%
 		out.println("I endup being here in jsp file 2.");
+		int a=4;
 	%>
 	<br>
 	
 	<%
 		out.println("hello im the second line");
+		out.println("value of a is : " + a);
 	%>
 </body>
 </html>
