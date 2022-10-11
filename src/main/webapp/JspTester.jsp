@@ -14,10 +14,11 @@
 	int a=Integer.parseInt( request.getParameter("num1"));
 	int b=Integer.parseInt( request.getParameter("num2"));
 	int result = a+b;
-	
-
-	
-	response.sendRedirect("jspFile2.jsp");
+	out.println("Hello I am a jsp file");
+	%>
+	<br>
+	<%
+	out.println("The result is : " + result);
 	%>
 </body>
 </html>
