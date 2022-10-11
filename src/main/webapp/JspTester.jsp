@@ -15,8 +15,9 @@
 	int b=Integer.parseInt( request.getParameter("num2"));
 	int result = a+b;
 	
-	out.println("Following is a jsp file ");
-	out.println("\nThe result is : " + result);
+
+	
+	response.sendRedirect("jspFile2.jsp");
 	%>
 </body>
 </html>
