@@ -10,6 +10,8 @@
 	<%
 		out.println("I endup being here in jsp file 2.");
 	%>
+	<br>
+	
 	<%
 		out.println("hello im the second line");
 	%>
