@@ -6,7 +6,7 @@
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
 </head>
-<body>
+<body bgcolor="MediumSeaGreen">
 	<h3>h3 reference</h3>
 	<br>
 	<hr>
@@ -15,8 +15,8 @@
 	int b=Integer.parseInt( request.getParameter("num2"));
 	int result = a+b;
 	
-	out.println("Following is a jsp file");
-	out.println("The result is : " + result);
+	out.println("Following is a jsp file ");
+	out.println("\nThe result is : " + result);
 	%>
 </body>
 </html>
