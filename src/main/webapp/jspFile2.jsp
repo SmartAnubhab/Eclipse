@@ -8,14 +8,19 @@
 </head>
 <body bgcolor="LightGray">
 	<%
+		int a,b,result;
 		out.println("I endup being here in jsp file 2.");
-		int a=4;
+		a = (int) session.getAttribute("a");
+		b = (int) session.getAttribute("b");
+		result = a+b;
 	%>
 	<br>
 	
 	<%
 		out.println("hello im the second line");
-		out.println("value of a is : " + a);
+	%><br>
+	<%
+		out.println("value of a is : " + result);
 	%>
 </body>
 </html>
