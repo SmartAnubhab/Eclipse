@@ -22,7 +22,7 @@
 	%>
 	<br>
 	<%
-	response.sendRedirect("jspFile.jsp");
+	response.sendRedirect("jspFile2.jsp");
 	%>
 </body>
 </html>
