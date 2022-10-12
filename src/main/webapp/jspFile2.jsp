@@ -22,5 +22,6 @@
 	<%
 		out.println("value of a is : " + result);
 	%>
+	<a href="index.html">Home page</a>
 </body>
 </html>
