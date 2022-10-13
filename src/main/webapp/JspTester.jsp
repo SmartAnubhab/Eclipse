@@ -13,9 +13,7 @@
 	<%
 	int a=Integer.parseInt( request.getParameter("num1"));
 	int b=Integer.parseInt( request.getParameter("num2"));
-	int result = a+b;
-	Cookie cookie=new Cookie("a",result+"");
-	response.addCookie(cookie);
+	
 	%>
 	<br>
 	<%
