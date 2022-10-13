@@ -8,15 +8,9 @@
 </head>
 <body bgcolor="LightGray">
 	<%
-		
-	%>
-	<br>
-	
-	<%
-		out.println("hello im the second line");
-	%><br>
-	<%
-		
+	for(int i=0; i<5; i++){
+		out.println("header");
+	}
 	%>
 	<a href="index.html">Home page</a>
 </body>
