@@ -14,11 +14,12 @@ import jakarta.servlet.http.HttpSession;
 public class NewServlet extends HttpServlet{
 	public void service(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException {
 		
-		float a = Float.parseFloat(req.getParameter("num"));
+		float a = Float.parseFloat(req.getParameter("num1"));
 		float b = Float.parseFloat(req.getParameter("num2"));
-		float result = a+b;)
+		float result = (float) a+b;)
 		
-		
+		Cookie cookie=new Cookie("result",result+"");
+		res.addCookie(cookie);
 				
 	}
 }
