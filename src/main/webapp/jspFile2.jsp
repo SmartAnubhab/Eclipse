@@ -7,9 +7,18 @@
 <title>Jsp File II</title>
 </head>
 <body bgcolor="LightGray">
+	<%int j=1; 
+	while(j<=5){
+		out.println("<h"+j+">");
+	%>
 	<%
-	for(int i=0; i<5; i++){
+	
 		out.println("header");
+	
+	%>
+	<%
+		out.println("</h"+j+">");
+	j++;
 	}
 	%>
 	<a href="index.html">Home page</a>
