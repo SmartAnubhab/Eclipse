@@ -17,7 +17,7 @@
 	%>
 	<br>
 	<%
-	response.sendRedirect("jspFile2.jsp");
+	response.sendRedirect("add.jsp");
 	%>
 </body>
 </html>
