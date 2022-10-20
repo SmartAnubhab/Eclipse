@@ -5,7 +5,7 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Add</title>
-</head>
+</head bgcolor="LightGray">
 <body>
 
 </body>
