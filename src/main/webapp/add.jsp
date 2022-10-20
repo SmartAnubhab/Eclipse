@@ -7,6 +7,8 @@
 <title>Add</title>
 </head bgcolor="LightGray">
 <body>
-
+	<%
+	out.println("Hello, I got redirected to this page to add two values.");
+	%>
 </body>
 </html>
