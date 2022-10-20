@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-Error
+Error in the calculation.
 	<%= exception.getMessage() %>
 
 </body>
