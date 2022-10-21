@@ -6,7 +6,7 @@
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
 </head>
-<body bgcolor="sky blue">
+<body bgcolor="yellow">
 Error in the calculation.
 	<%= exception.getMessage() %>
 
