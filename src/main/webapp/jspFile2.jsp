@@ -7,13 +7,17 @@
 <title>Jsp File II</title>
 </head>
 <body bgcolor="LightGray">
-	<%int j=1; 
+	<%
+	String text=request.getParameter("enteredText");
+	
+	
+	int j=1; 
 	while(j<=5){
 		out.println("<h"+j+">");
 	%>
 	<%
 	
-		out.println("header");
+		out.println(text);
 	
 	%>
 	<%
