@@ -11,8 +11,10 @@
 	<br>
 	<hr>
 	<%
-	int a=Integer.parseInt( request.getParameter("num1"));
-	int b=Integer.parseInt( request.getParameter("num2"));
+	float a=Float.parseFloat( request.getParameter("num1"));
+	float b=Float.parseFloat( request.getParameter("num2"));
+	float addition=a+b;
+	
 	
 	%>
 	<br>
