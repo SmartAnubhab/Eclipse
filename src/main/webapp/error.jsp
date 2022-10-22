@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Oops.... something went wrong!</title>
 </head>
 <body bgcolor="yellow">
 Error in the calculation.
