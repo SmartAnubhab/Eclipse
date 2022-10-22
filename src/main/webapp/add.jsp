@@ -13,11 +13,9 @@
 	<br>
 	<hr>
 	<%
-	try{
+	
 		int a=9/0;
-	}catch(Exception e){
-		out.println("Error is ");
-	}
+	
 	%>
 </body>
 </html>
