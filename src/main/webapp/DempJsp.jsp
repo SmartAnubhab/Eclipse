@@ -9,7 +9,10 @@
 <body bgcolor="sky blue">
 	<h3>Demo servlet called me.</h3>
 	
-	
+	<%
+	String name=request.getAttribute("MyName").toString();
+	out.println("Value is " + name);
+	%>
 	
 </body>
 </html>
