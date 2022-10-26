@@ -11,6 +11,8 @@ public class DemoServlet {
 	public void service(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException{
 		
 		
+		String name="Anubhab Mondal";
+		
 		RequestDispatcher rd=req.getRequestDispatcher("DemoJsp.jsp");
 		rd.forward(req, res);
 	}
