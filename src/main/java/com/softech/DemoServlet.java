@@ -12,8 +12,9 @@ public class DemoServlet {
 		
 		
 		String name="Anubhab Mondal";
+		req.setAttribute("MyName", name);
 		
-		RequestDispatcher rd=req.getRequestDispatcher("DemoJsp.jsp");
+		RequestDispatcher rd=req.getRequestDispatcher("DemoJsp.jsp");		
 		rd.forward(req, res);
 	}
 }
