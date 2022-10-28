@@ -4,17 +4,23 @@ import java.io.IOException;
 
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
-public class DemoServlet {
-	public void service(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException{
+@WebServlet("/DemoServlet")
+public class DemoServlet extends HttpServlet{
+	public void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
 		
+		//This code is not working, we need to check it later
+		//This servlet page supposed to go to Demo.jsp
+		//Problem is index.html is not ending up into this page
 		
 		String name="Anubhab Mondal";
-		req.setAttribute("MyName", name);
+		request.setAttribute("MyName", name);
 		
-		RequestDispatcher rd=req.getRequestDispatcher("DemoJsp.jsp");		
-		rd.forward(req, res);
+		RequestDispatcher rd=request.getRequestDispatcher("DemoJsp.jsp");	
+		rd.forward(request, response);
 	}
 }
