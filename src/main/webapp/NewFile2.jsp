@@ -6,10 +6,14 @@
 <meta charset="ISO-8859-1">
 <title>2ND JSP PAGE</title>
 </head>
-<body>
+<body bgcolor="sky blue">
 	<%
 	out.println("I AM 2ND JSP PAGE");
-	
+	HttpSession session1=request.getSession();
+	int b=(int)session1.getAttribute("a");
+	out.println("b is " + b);
 	%>
+	<br>
+	<a href="index.html">Main menu</a>
 </body>
 </html>
