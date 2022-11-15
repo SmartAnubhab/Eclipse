@@ -10,7 +10,10 @@
 	<%
 	out.println("I AM 2ND JSP PAGE");
 	HttpSession session1=request.getSession();
-	int b=(int)session1.getAttribute("a");
+	
+
+	int	b=(int)session1.getAttribute("a");
+	
 	out.println("b is " + b);
 	%>
 	<br>
